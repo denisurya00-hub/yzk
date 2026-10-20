@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminjaman | Web Perpustakaan</title>
+    <link rel="stylesheet" href="../style/page.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../index.html" class="logo">web<span>perpus.</span></a>
+
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../profil/index.html">Profil</a>
+        <a href="../koleksi/index.html">Koleksi</a>
+        <a href="index.html" class="active">Peminjaman</a>
+        <a href="../kontak/index.html">Kontak</a>
+    </div>
+</nav>
+
+<main>
+    <h2>Peminjaman Buku</h2>
+    <p>
+        Isi formulir berikut untuk mengajukan peminjaman buku
+        di perpustakaan kami.
+    </p>
+
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap</label>
+        <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama lengkap"
+            required
+        >
+
+        <label for="anggota">Nomor Anggota</label>
+        <input
+            type="text"
+            id="anggota"
+            name="anggota"
+            placeholder="Contoh: RB001"
+            required
+        >
+
+        <label for="buku">Pilih Buku</label>
+        <select id="buku" name="buku" required>
+            <option value="">-- Pilih Buku --</option>
+            <option value="Laskar Pelangi">Laskar Pelangi</option>
+            <option value="Bumi">Bumi</option>
+            <option value="Filosofi Teras">Filosofi Teras</option>
+            <option value="Atomic Habits">Atomic Habits</option>
+            <option value="Bumi Manusia">Bumi Manusia</option>
+        </select>
+
+        <label for="pinjam">Tanggal Peminjaman</label>
+        <input
+            type="date"
+            id="pinjam"
+            name="pinjam"
+            required
+        >
+
+        <label for="kembali">Tanggal Pengembalian</label>
+        <input
+            type="date"
+            id="kembali"
+            name="kembali"
+            required
+        >
+
+        <label for="catatan">Catatan (opsional)</label>
+        <textarea
+            id="catatan"
+            name="catatan"
+            rows="3"
+            placeholder="Masukkan catatan tambahan"
+        ></textarea>
+
+        <button type="submit">Ajukan Peminjaman</button>
+        <button type="reset" class="reset-button">Reset</button>
+    </form>
+
+    <p class="note">
+        Formulir ini merupakan contoh tampilan dan belum
+        terhubung dengan sistem penyimpanan data.
+    </p>
+
+    <a href="../koleksi/index.html" class="button-link">
+        Kembali ke Koleksi Buku
+    </a>
+</main>
+
+<footer class="home-footer">
+    <p>&copy; 2026 Web Perpustakaan</p>
+</footer>
+
+</body>
+</html>
